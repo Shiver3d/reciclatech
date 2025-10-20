@@ -1,5 +1,34 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.navegação {
+  border: solid aquamarine;
+}
+
+.logo {
+  border: solid cadetblue;
+}
+
+.dados {
+  border: solid aqua;
+}
+
+.explicativo {
+  border: solid green;
+}
+
+.rodapé {
+  border: solid red;
+}
+
+.avaliações {
+  border: solid #996300;
+}
+
+.cta {
+  border: solid salmon;
 }/*# sourceMappingURL=style.css.map */
