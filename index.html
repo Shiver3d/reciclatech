@@ -4,215 +4,304 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Recicla Tech</title>
   </head>
   <body>
     <!-- Header com a tag nav -->
     <header>
-      <nav class="navegação">
-        <h1>Recicla Tech</h1>
-        <ul>
-          <li><a href="index.html">Como funciona</a></li>
-          <li><a href="">Doar</a></li>
-          <li><a href="">Adquirir</a></li>
-          <button>Recicle Agora</button>
+      <nav class="navigation">
+        <h1>ReciclaTech</h1>
+        <ul class="lista-nav">
+          <li><a href="#">Como Funciona</a></li>
+          <li><a href="#">Doar</a></li>
+          <li><a href="#">Adquirir</a></li>
+          <button class="btn-nav">Começar Agora</button>
         </ul>
       </nav>
     </header>
-    <!-- Conteúdo principal -->
+
     <main>
-      <!-- Introdução da página -->
+      <!-- seção da logo/hero -->
       <section class="logo">
-        <div>
-          <h2>Dê um novo horizonte ao seus eletrônicos!</h2>
-          <h4>
+        <div class="logo-container">
+          <h2>Dê uma segunda vida aos seus eletrônicos!</h2>
+          <p>
             Conectamos pessoas que querem doar eletrônicos em bom estado com
             quem precisa deles. Simples, gratuito e sustentável!
-          </h4>
-          <img
-            src="img/simbolo-reciclagem.png"
-            alt="simbolo de reciclagem verde claro"
-          />
-          <button>Quero doar!</button>
-          <button>Como adquirir?</button>
+          </p>
+          <div class="logo-buttons">
+            <button class="btn-doar">Quero doar! 🎁</button>
+            <button class="btn-adquirir">Quero adquirir! ♥</button>
+          </div>
         </div>
+        <img src="img/simbolo-reciclagem.png" alt="Símbolo de Reciclagem" />
       </section>
-      <!-- Seção com Dados -->
+      <!-- seção dos dados -->
       <section class="dados">
-        <div>
+        <div class="dados-item">
           <h2>2.5k+</h2>
-          <p>Eletrônicos reciclados</p>
+          <p class="texto-dados">Contas criadas</p>
         </div>
-        <div>
+        <div class="dados-item">
           <h2>1.8k+</h2>
-          <p>Famílias beneficiadas</p>
+          <p class="texto-dados">Itens reciclados</p>
         </div>
-        <div>
+        <div class="dados-item">
           <h2>95%</h2>
-          <p>Satisfação dos usuários</p>
+          <p class="texto-dados">Satisfação</p>
         </div>
       </section>
-      <!-- Seção com Cards Explicativos -->
+      <!-- seção da explicação de como funciona o projeto -->
       <section class="explicativo">
-        <div>
-          <h2>Como funciona?</h2>
+        <div class="explicativo-header">
+          <h2>Como Funciona?</h2>
           <h3>É mais fácil que trocar a pilha do controle!</h3>
         </div>
-        <div class="doadores">
-          <h3>Para doadores</h3>
-          <p>Transforme seu lixo eletrônico no tesouro de alguém</p>
-          <ul>
-            <li>
-              Cadastre seu eletrônico
-              <p>Tire as fotos, deixe bem bonito, descreva e pronto!</p>
-            </li>
-            <li>
-              Aguarde o match
-              <p>Alguém vai se interessar pelo seu item!</p>
-            </li>
-            <li>
-              Combine a entrega
-              <p>Vocês vão decidir como fazer a entrega</p>
-            </li>
-          </ul>
-        </div>
-        <div class="adquirentes">
-          <h3>Para adquirentes</h3>
-          <p>Converse, conecte-se e encontre o que precisa!</p>
-          <ul>
-            <li>
-              Explore o que quiser
-              <p>Procure entre os eletrônicos disponíveis</p>
-            </li>
-            <li>
-              Demonstre interesse
-              <p>Clique em "Tenho interesse!" no item que deseja</p>
-            </li>
-            <li>
-              Combine a entrega
-              <p>Fale com o doador e seja feliz com seu novo eletrônico!</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- Seção com Produtos -->
-      <section>
-        <div>
-          <h2>Produtos disponíveis</h2>
-          <h3>Olhe o catálogo, certamente pode se interessar.</h3>
-        </div>
-        <div class="card">
-          <h4>Fones</h4>
-          <p>Fones em ótimo estado, prontos para uso.</p>
-        </div>
-        <div class="card">
-          <h4>Notebooks</h4>
-          <p>Funcionando perfeitamente, ótimos para acessar a web, não?</p>
-        </div>
-        <div class="card">
-          <h4>Celulares</h4>
-          <p>Telefones em ótimo estado, prontos para uma nova jornada.</p>
-        </div>
-      </section>
-      <!-- Seção com Avaliações -->
-      <section class="avaliações">
-        <div>
-            <h2>O que o pessoal tá falando?</h2>
-            <h3>Histórias reais de quem já usou</h3>
-        </div>
-        <div>
-            <div>
-                <div class="estrelas">★★★★★</div>
-                <p class="dizer">"Doei meu notebook antigo e em 2 dias já tinha alguém interessado! Ver a felicidade do estudante que recebeu não tem preço! 🥳"</p>
-                <div>
-                      <ul>
-                        <li>João Santos</li>
-                        <li>Doador</li>
-                      </ul>
-                </div>
+        <div class="explicativo-grid">
+          <div class="box-doadores">
+            <div class="box-header">
+              <span class="header-icone doador-icone">🎁</span>
+              <h3>Para Doadores</h3>
             </div>
+            <p class="box-descricao">
+              Transforme seu "lixo eletrônico" no tesouro de alguém.
+            </p>
+            <ul class="lista-passos">
+              <li>
+                <span class="passo-numero">1</span>
+                <div class="passo-conteudo">
+                  <h4>Cadastre seu eletrônico</h4>
+                  <p>Tire fotos, descreva o estado e pronto!</p>
+                </div>
+              </li>
+              <li>
+                <span class="passo-numero">2</span>
+                <div class="passo-conteudo">
+                  <h4>Aguarde o match</h4>
+                  <p>Alguém vai se interessar pelo seu item</p>
+                </div>
+              </li>
+              <li>
+                <span class="passo-numero">3</span>
+                <div class="passo-conteudo">
+                  <h4>Combine a entrega</h4>
+                  <p>Vocês decidem como fazer a entrega</p>
+                </div>
+              </li>
+            </ul>
+            <button class="btn-doar">Doar Agora!</button>
+          </div>
 
-        <div>
-          <div>
+          <div class="box-adquirentes">
+            <div class="box-header">
+              <span class="header-icone adquirente-icone">💙</span>
+              <h3>Para Adquirentes</h3>
+            </div>
+            <p class="box-descricao">
+              Encontre o eletrônico dos seus sonhos de graça.
+            </p>
+            <ul class="lista-passos">
+              <li>
+                <span class="passo-numero">1</span>
+                <div class="passo-conteudo">
+                  <h4>Explore os itens</h4>
+                  <p>Navegue pelos eletrônicos disponíveis</p>
+                </div>
+              </li>
+              <li>
+                <span class="passo-numero">2</span>
+                <div class="passo-conteudo">
+                  <h4>Demonstre interesse</h4>
+                  <p>Clique em "Tenho interesse!" no item</p>
+                </div>
+              </li>
+              <li>
+                <span class="passo-numero">3</span>
+                <div class="passo-conteudo">
+                  <h4>Receba seu novo gadget</h4>
+                  <p>Combine com o doador e seja feliz!</p>
+                </div>
+              </li>
+            </ul>
+            <button class="btn-adquirir">Adquirir agora!</button>
+          </div>
+        </div>
+      </section>
+      <!-- seção dos produtos -->
+      <section class="produtos">
+        <h2>Produtos Disponíveis</h2>
+        <p class="subtitulo-produtos">Categorias mais populares</p>
+        <div class="produtos-grid">
+          <div class="card">
+            <img src="img/Fone.png" alt="Fones de ouvido" class="card-img" />
+            <div class="card-content">
+              <h4>Fones</h4>
+              <p>Fones em ótimo estado, prontos pra uso.</p>
+              <button class="btn-produto">Quero adquirir</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="img/Notebook.png" alt="Notebook" class="card-img" />
+            <div class="card-content">
+              <h4>Notebooks</h4>
+              <p>Notebooks funcionando direitinho, prontos pra você usar.</p>
+              <button class="btn-produto">Quero adquirir</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="img/Smartphones.png" alt="Celulares" class="card-img" />
+            <div class="card-content">
+              <h4>Celulares</h4>
+              <p>Celulares em ótimo estado, prontos para uma nova jornada.</p>
+              <button class="btn-produto">Quero adquirir</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- seção das avaliações de usuários -->
+      <section class="avaliações">
+        <h2>O que o pessoal tá falando?</h2>
+        <p class="subtitulo-avaliacoes">Histórias reais de quem já usou</p>
+        <div class="avaliacoes-grid">
+          <div class="avaliacao">
             <div class="estrelas">★★★★★</div>
-              <p class="dizer">"Consegui um iPhone 12 em perfeito estado! A dona anterior cuidou super bem. Economizei uma grana e ainda ajudei o meio ambiente! 🌱"</p>
-                <div>
-                  <ul>
-                    <li>Maria Silva</li>
-                    <li>Adquirente</li>
-                  </ul>
+            <p>
+              "Doei meu notebook antigo e em 2 dias já tinha alguém interessado!
+              Ver a felicidade do estudante que recebeu não tem preço! 🥰"
+            </p>
+            <div class="usuario-info">
+              <div class="icone" style="background-color: #e6ffed">
+                <span style="font-size: 1.5rem">🎁</span>
               </div>
-          </div>
-        <div>
-          <div>
-              <div class="estrelas">★★★★★</div>
-              <p class="dizer">"Plataforma incrível! Já doei 3 itens e adquiri 2. A comunidade é super respeitosa e o processo é muito fácil! 👏"</p>
-              <div>
-                    <ul>
-                      <li>Ana Costa</li>
-                      <li>Usuária ativa</li>
-                    </ul>
+              <div class="nome-perfil">
+                <strong>João Santos</strong>
+                <span>Doador</span>
               </div>
+            </div>
           </div>
-    </section>
-    <!-- Seção de Call-to-action -->
-    <section class="cta">
-        <h2>Pronto para fazer a diferença?</h2>
-        <p>Junte-se à nossa comunidade e ajude a criar um mundo mais sustentável, um eletrônico de cada vez!</p>
+          <div class="avaliacao">
+            <div class="estrelas">★★★★★</div>
+            <p>
+              "Consegui um iPhone 12 em perfeito estado! A doadora anterior
+              cuidou super bem. Economizei uma grana e ainda ajudei o meio
+              ambiente! 🌱"
+            </p>
+            <div class="usuario-info">
+              <div class="icone" style="background-color: #e6f4ff">
+                <span style="font-size: 1.5rem">💙</span>
+              </div>
+              <div class="nome-perfil">
+                <strong>Maria Silva</strong>
+                <span>Adquirente</span>
+              </div>
+            </div>
+          </div>
+          <div class="avaliacao">
+            <div class="estrelas">★★★★★</div>
+            <p>
+              "Plataforma incrível! Já doei 3 itens e adquiri 2. A comunidade é
+              super respeitosa e o processo é muito fácil! 👍"
+            </p>
+            <div class="usuario-info">
+              <div class="icone" style="background-color: #e3ffe3">
+                <span style="font-size: 1.5rem">♻️</span>
+              </div>
+              <div class="nome-perfil">
+                <strong>Ana Costa</strong>
+                <span>Usuária Ativa</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- seção call to action -->
+      <section class="cta">
+        <h2 class="cta-text">Pronto para fazer a diferença?</h2>
+        <p class="cta-text">
+          Junte-se à nossa comunidade e ajude a criar um mundo mais sustentável,
+          um eletrônico de cada vez!
+        </p>
         <div class="cta-buttons">
-            <button class="primary">Começar Agora</button>
-            <button class="secondary">Saber Mais</button>
+          <button class="primary">Começar Agora</button>
+          <button class="secondary">Saber Mais</button>
         </div>
-    </section>
+      </section>
     </main>
-    <footer class="rodapé">
-      <div>
-        <!-- Container principal com layout em grid responsivo -->
-        <div>
-          <!-- Coluna 1: Sobre a Empresa -->
-          <div class="space-y-4">
-            <a href="#">
-              <h4>ReciclaTech</h4>
-            </a>
-            <p>Conectando pessoas através da sustentabilidade e tecnologia.</p>
-          </div>
-
-          <!-- Coluna 2: Links Rápidos -->
-          <div>
-            <h5>Links Rápidos</h5>
-            <ul>
-              <li><a href="#">Como Funciona</a></li>
-              <li><a href="#">Doar</a></li>
-              <li><a href="#">Adquirir</a></li>
-              <li><a href="#">Contato</a></li>
-            </ul>
-          </div>
-
-          <!-- Coluna 3: Suporte -->
-          <div>
-            <h5>Suporte</h5>
-            <ul>
-              <li><a>FAQ</a></li>
-              <li><a>Termos de Uso</a></li>
-              <li><a>Privacidade</a></li>
-              <li><a>Ajuda</a></li>
-            </ul>
-          </div>
-
-          <!-- Coluna 4: Redes Sociais -->
-          <div>
-            <h5>Redes Sociais</h5>
-            <p>Siga-nos para novidades e dicas de sustentabilidade!</p>
-          </div>
-        </div>
-
-        <!-- Linha divisória e Copyright -->
-        <div>
-          <p>
-            &copy; 2025 ReciclaTech. Todos os direitos reservados. Feito com
-            <span>&hearts;</span> para um mundo melhor.
+    <!-- gatinho do cantinho :3 -->
+    <aside class="npc-gatinho">
+      <input
+        type="checkbox"
+        id="npc-dialogo-toggle"
+        class="npc-dialogo-toggle"
+      />
+      <label for="npc-dialogo-toggle" class="npc-label">
+        <img src="img/gatinhoA.png" alt="Gatinho A" class="gatinho-a" />
+        <img src="img/gatinhoB.png" alt="Gatinho B" class="gatinho-b" />
+      </label>
+      <div class="dialogo-npc">
+        <p>
+          Olá! Sabia que reciclar eletrônicos é super importante? Ajuda a
+          proteger o meio ambiente e a economizar recursos naturais. 🐾
+        </p>
+        <label for="npc-dialogo-toggle" class="fechar-dialogo">Entendi!</label>
+      </div>
+    </aside>
+    <!-- Footer/Cabeçalho -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Coluna 1: Marca -->
+        <div class="footer-brand">
+          <h4>ReciclaTech</h4>
+          <p class="brand-subtitle">
+            Conectando pessoas através da sustentabilidade e tecnologia.
           </p>
         </div>
+
+        <!-- Coluna 2: Links Rápidos -->
+        <div class="footer-links">
+          <h5>Links Rápidos</h5>
+          <ul>
+            <li><a href="#">Como Funciona</a></li>
+            <li><a href="#">Adquirir</a></li>
+            <li><a href="#">Adotar</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Suporte -->
+        <div class="footer-support">
+          <h5>Suporte</h5>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="#">Privacidade</a></li>
+            <li><a href="#">Ajuda</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: Redes Sociais -->
+        <div class="footer-social">
+          <h5>Redes Sociais</h5>
+          <p class="brand-subtitle">
+            Siga-nos para novidades e dicas de sustentabilidade!
+          </p>
+        </div>
+      </div>
+
+      <!-- Linha divisória -->
+      <div class="footer-bottom">
+        <p class="brand-subtitle">
+          &copy; 2025 ReciclaTech. Todos os direitos reservados. Feito com
+          <span>&hearts;</span> para um mundo melhor.
+        </p>
       </div>
     </footer>
   </body>
