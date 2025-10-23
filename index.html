@@ -16,12 +16,14 @@
     <!-- Header com a tag nav -->
     <header>
       <nav class="navigation">
-        <h1>ReciclaTech</h1>
+        <h1>
+          <img src="img/Frame.png" alt="" class="ícone-reciclagem" />ReciclaTech
+        </h1>
         <ul class="lista-nav">
           <li><a href="#">Como Funciona</a></li>
           <li><a href="#">Doar</a></li>
           <li><a href="#">Adquirir</a></li>
-          <button class="btn-nav">Começar Agora</button>
+          <li><button class="btn-nav">Começar Agora</button></li>
         </ul>
       </nav>
     </header>
@@ -36,12 +38,25 @@
             quem precisa deles. Simples, gratuito e sustentável!
           </p>
           <div class="logo-buttons">
-            <button class="btn-doar">Quero doar! 🎁</button>
-            <button class="btn-adquirir">Quero adquirir! ♥</button>
+            <button class="btn-doar">
+              Quero doar!<img
+                src="img/Doadores.png"
+                alt="Ícone de presente verde"
+                class="ícone-logo"
+              />
+            </button>
+            <button class="btn-adquirir">
+              Quero adquirir!<img
+                src="img/Adquirentes.png"
+                alt="Ícone coração azul vazado"
+                class="ícone-logo"
+              />
+            </button>
           </div>
         </div>
         <img src="img/simbolo-reciclagem.png" alt="Símbolo de Reciclagem" />
       </section>
+      
       <!-- seção dos dados -->
       <section class="dados">
         <div class="dados-item">
@@ -57,6 +72,7 @@
           <p class="texto-dados">Satisfação</p>
         </div>
       </section>
+
       <!-- seção da explicação de como funciona o projeto -->
       <section class="explicativo">
         <div class="explicativo-header">
@@ -66,8 +82,12 @@
         <div class="explicativo-grid">
           <div class="box-doadores">
             <div class="box-header">
-              <span class="header-icone doador-icone">🎁</span>
-              <h3>Para Doadores</h3>
+              <img
+                src="img/Doadores.png"
+                alt="Ícone de presente verde"
+                class="ícone-presente"
+              />
+              <h3 class="titulo-doadores">Para Doadores</h3>
             </div>
             <p class="box-descricao">
               Transforme seu "lixo eletrônico" no tesouro de alguém.
@@ -100,29 +120,33 @@
 
           <div class="box-adquirentes">
             <div class="box-header">
-              <span class="header-icone adquirente-icone">💙</span>
-              <h3>Para Adquirentes</h3>
+              <img
+                src="img/Adquirentes.png"
+                alt="Coração vazado azul"
+                class="ícone-coracao"
+              />
+              <h3 class="titulo-adquirentes">Para Adquirentes</h3>
             </div>
             <p class="box-descricao">
               Encontre o eletrônico dos seus sonhos de graça.
             </p>
             <ul class="lista-passos">
               <li>
-                <span class="passo-numero">1</span>
+                <span class="passo-numero-adquirente">1</span>
                 <div class="passo-conteudo">
                   <h4>Explore os itens</h4>
                   <p>Navegue pelos eletrônicos disponíveis</p>
                 </div>
               </li>
               <li>
-                <span class="passo-numero">2</span>
+                <span class="passo-numero-adquirente">2</span>
                 <div class="passo-conteudo">
                   <h4>Demonstre interesse</h4>
                   <p>Clique em "Tenho interesse!" no item</p>
                 </div>
               </li>
               <li>
-                <span class="passo-numero">3</span>
+                <span class="passo-numero-adquirente">3</span>
                 <div class="passo-conteudo">
                   <h4>Receba seu novo gadget</h4>
                   <p>Combine com o doador e seja feliz!</p>
@@ -133,6 +157,7 @@
           </div>
         </div>
       </section>
+
       <!-- seção dos produtos -->
       <section class="produtos">
         <h2>Produtos Disponíveis</h2>
@@ -147,6 +172,7 @@
             </div>
           </div>
 
+          <!-- cards com os produtos -->
           <div class="card">
             <img src="img/Notebook.png" alt="Notebook" class="card-img" />
             <div class="card-content">
@@ -166,6 +192,7 @@
           </div>
         </div>
       </section>
+
       <!-- seção das avaliações de usuários -->
       <section class="avaliações">
         <h2>O que o pessoal tá falando?</h2>
@@ -222,6 +249,7 @@
           </div>
         </div>
       </section>
+
       <!-- seção call to action -->
       <section class="cta">
         <h2 class="cta-text">Pronto para fazer a diferença?</h2>
@@ -235,6 +263,7 @@
         </div>
       </section>
     </main>
+
     <!-- gatinho do cantinho :3 -->
     <aside class="npc-gatinho">
       <input
@@ -254,12 +283,20 @@
         <label for="npc-dialogo-toggle" class="fechar-dialogo">Entendi!</label>
       </div>
     </aside>
+
     <!-- Footer/Cabeçalho -->
     <footer class="footer">
       <div class="footer-container">
+
         <!-- Coluna 1: Marca -->
         <div class="footer-brand">
-          <h4>ReciclaTech</h4>
+          <h4>
+            <img
+              src="img/Frame.png"
+              alt=""
+              class="ícone-reciclagem"
+            />ReciclaTech
+          </h4>
           <p class="brand-subtitle">
             Conectando pessoas através da sustentabilidade e tecnologia.
           </p>
@@ -271,7 +308,7 @@
           <ul>
             <li><a href="#">Como Funciona</a></li>
             <li><a href="#">Adquirir</a></li>
-            <li><a href="#">Adotar</a></li>
+            <li><a href="#">Doar</a></li>
             <li><a href="#">Contato</a></li>
           </ul>
         </div>
@@ -292,6 +329,11 @@
           <h5>Redes Sociais</h5>
           <p class="brand-subtitle">
             Siga-nos para novidades e dicas de sustentabilidade!
+          </p>
+          <p class="logo-social">
+            <a href=""><img src="img/facebook.png" alt="logo facebook" /></a
+            ><a href=""><img src="img/email.png" alt="logo de e-mail" /></a
+            ><a href=""><img src="img/Twitter.png" alt="" /></a>
           </p>
         </div>
       </div>

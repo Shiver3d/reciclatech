@@ -14,11 +14,12 @@
   background-position: right center;
   transform: scale(1.05);
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .btn-adquirir, .btn-doar {
   padding: 0.8rem 1.5rem;
-  border-radius: 8px;
+  border-radius: 80px;
   border: none;
   font-size: 1rem;
   font-weight: bold;
@@ -55,7 +56,13 @@ button {
   background-image: url(img/header.png);
   background-size: auto;
 }
+.navigation .ícone-reciclagem {
+  display: inline-flex;
+  width: 35px;
+  margin-right: 10px;
+}
 .navigation h1 {
+  display: inline-flex;
   color: #000000;
   font-size: 1.8rem;
   text-shadow: #ffffff 0.1em 0.1em 0.3em;
@@ -64,7 +71,9 @@ button {
   background-image: linear-gradient(to right, #16a34a, #9dffb0, #16a34a);
   color: #ffffff;
   padding: 0.6rem 1rem;
-  border-radius: 8px;
+  border-radius: 80px;
+  width: 10rem;
+  height: 50px;
   border: none;
   font-weight: bold;
 }
@@ -99,6 +108,18 @@ body {
   background-size: cover;
 }
 
+.ícone-logo {
+  display: inline-flex;
+  width: 50px;
+  margin-left: 20px;
+}
+
+.ícone-reciclagem {
+  display: inline-flex;
+  width: 40px;
+  margin-right: 10px;
+}
+
 h2 {
   font-size: 4rem;
   color: #000000;
@@ -121,6 +142,8 @@ p {
 }
 .logo-buttons button {
   margin-right: 1rem;
+  display: inline-flex;
+  align-items: center;
 }
 
 .logo img {
@@ -133,13 +156,14 @@ p {
   justify-content: space-around;
   padding: 2.7rem;
   font-size: 2rem;
-  background-color: rgba(129, 241, 247, 0.9333333333);
+  background-color: rgba(129, 241, 247, 0.8470588235);
 }
 .dados .dados-item {
   text-align: center;
 }
 .dados .dados-item h2 {
   color: #16a34a;
+  font-weight: bold;
 }
 
 .texto-dados {
@@ -196,15 +220,20 @@ p {
   align-items: center;
   justify-content: center;
 }
-.explicativo .explicativo-grid > div .box-header .doador-icone {
-  background-color: #e6f4ff;
+.explicativo .explicativo-grid > div .box-header .ícone-presente {
+  margin-right: 15px;
 }
-.explicativo .explicativo-grid > div .box-header .adquirente-icone {
-  background-color: #e6f4ff;
+.explicativo .explicativo-grid > div .box-header .ícone-coracao {
+  margin-right: 15px;
 }
-.explicativo .explicativo-grid > div .box-header h3 {
+.explicativo .explicativo-grid > div .box-header .titulo-doadores {
   font-size: 1.5rem;
-  color: #81f1f7;
+  color: #16a34a;
+  text-shadow: none;
+}
+.explicativo .explicativo-grid > div .box-header .titulo-adquirentes {
+  font-size: 1.5rem;
+  color: #2563eb;
   text-shadow: none;
 }
 .explicativo .explicativo-grid > div .box-descricao {
@@ -238,6 +267,19 @@ p {
   margin-right: 15px;
   flex-shrink: 0;
 }
+.explicativo .explicativo-grid > div .lista-passos li .passo-numero-adquirente {
+  background-color: #2563eb;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
 .explicativo .explicativo-grid > div .lista-passos li .passo-conteudo h4 {
   font-size: 1.1rem;
   color: #333;
@@ -256,12 +298,13 @@ p {
 }
 
 .produtos {
+  border-top: 1px solid rgba(255, 245, 99, 0.7333333333);
   padding: 4rem 2rem;
   text-align: center;
 }
 .produtos h2 {
   font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
   color: #000;
 }
 .produtos .subtitulo-produtos {
@@ -281,7 +324,7 @@ p {
   padding: 0;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  border: 1px solid #c8e6c9;
+  border: 3px solid rgba(157, 255, 177, 0.4666666667);
   overflow: hidden;
 }
 .produtos .produtos-grid .card .card-img {
@@ -312,7 +355,7 @@ p {
   color: white;
   border: none;
   padding: 0.7rem 1.2rem;
-  border-radius: 6px;
+  border-radius: 80px;
   font-weight: bold;
   width: 100%;
 }
@@ -401,8 +444,8 @@ p {
   margin-top: 1rem;
 }
 .cta .cta-buttons button {
-  margin: 0.5rem;
-  padding: 0.8rem 1.2rem;
+  margin: 3rem;
+  padding: 1.5rem 3rem;
   border-radius: 4px;
   font-weight: bold;
 }
@@ -428,8 +471,14 @@ p {
   gap: 2rem;
   margin-bottom: 1.5rem;
 }
+.footer .ícone-reciclagem {
+  display: inline-flex;
+  width: 30px;
+  margin-right: 10px;
+}
 .footer h4 {
   font-size: 1.5rem;
+  display: inline-flex;
 }
 .footer .brand-subtitle {
   font-size: 0.95rem;
@@ -470,28 +519,54 @@ p {
 .footer .footer-bottom span {
   color: #ff4081;
 }
+.footer .logo-social {
+  margin-top: 1rem;
+}
+.footer .logo-social a {
+  margin-right: 1rem;
+}
+.footer .logo-social a img {
+  width: 40px;
+  height: 40px;
+}
 
 @media (max-width: 768px) {
   .navigation {
-    background-image: none;
-    background-color: #9dffb0;
-    padding: 1.5rem 1rem;
     flex-direction: column;
     align-items: flex-start;
+    background-image: none;
+    background-color: rgba(255, 245, 99, 0.1921568627);
+    padding: 1.5rem 1rem;
+  }
+  .navigation .ícone-reciclagem {
+    width: 50px;
+    margin-right: 15px;
   }
   .navigation h1 {
+    width: 100%;
     margin-bottom: 1rem;
+    font-size: 2.5rem;
+    text-align: left;
   }
   .navigation .lista-nav {
-    flex-direction: column;
-    align-items: flex-start;
+    display: inline-flex;
+    align-items: center;
     width: 100%;
+    margin-left: 0;
+    gap: 4.5rem;
   }
   .navigation .lista-nav li {
+    width: 100%;
     margin: 0.5rem 0;
   }
-  .navigation .btn-nav {
+  .navigation .lista-nav li a {
+    display: block;
+    padding: 0.2rem 0;
+    font-size: 1.1rem;
+  }
+  .navigation .lista-nav .btn-nav {
     width: 100%;
+    text-align: center;
     margin-top: 1rem;
   }
   .logo {
@@ -505,23 +580,36 @@ p {
     margin-bottom: 2rem;
   }
   .logo .logo-container h2 {
-    font-size: 2rem;
+    font-size: 4rem;
+  }
+  .logo .logo-container p {
+    font-size: 1.5rem;
   }
   .logo img {
     max-width: 90%;
   }
   .logo .logo-buttons {
-    flex-direction: column;
-    width: 100%;
+    display: inline-flex;
+    gap: 3rem;
+    width: 90%;
+    height: 12vh;
   }
   .logo .logo-buttons button {
-    width: 100%;
-    margin: 0.5rem 0;
+    width: 50%;
+  }
+  .logo .logo-buttons .ícone-logo {
+    width: 27%;
+    margin-left: 3rem;
   }
   .dados {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 2rem 1.5rem;
+    padding: 2rem;
+  }
+  .dados .dados-item h2 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .dados .dados-item .texto-dados {
+    font-size: 1rem;
   }
   .explicativo {
     padding: 3rem 1.5rem;
@@ -529,6 +617,10 @@ p {
   .explicativo .explicativo-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  .explicativo .btn-doar,
+  .explicativo .btn-adquirir {
+    height: 10vh;
   }
   .produtos {
     padding: 3rem 1.5rem;
@@ -543,13 +635,9 @@ p {
     width: 75%;
     height: auto;
   }
-  .produtos .produtos-grid .card .card-image {
+  .produtos .produtos-grid .card .card-img {
     width: 100%;
-  }
-  .produtos .produtos-grid .card img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    height: 35vh;
   }
   .avaliações {
     padding: 3rem 1.5rem;
@@ -562,18 +650,20 @@ p {
     padding: 3rem 1.5rem;
   }
   .cta .cta-buttons {
+    margin-top: 10vh;
     flex-direction: column;
   }
   .cta .cta-buttons button {
+    font-size: 1.5rem;
     width: 100%;
-    margin: 0.5rem 0;
+    height: 12vh;
+    margin: 5vh 0;
   }
   .footer {
     padding: 2rem 1.5rem;
   }
   .footer .footer-container {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 3rem;
   }
   .footer .footer-bottom {
     text-align: center;
